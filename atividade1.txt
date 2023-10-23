@@ -1,0 +1,24 @@
+programa//ordenar em ordem decrescente
+{
+	funcao inicio() 
+	{
+		inteiro v[10], i, j, aux
+		escreva ("Digite 10 números:\n")
+		para (i=9; i>=0; i = i-1){	
+	leia (v[i])
+	}
+	para (i=9; i>=0; i=i-1){
+		para (j=i-1; j>=0; j = j-1){
+			se (v[j] > v[i]) {
+				aux = v[j]
+				v[j]= v[i]
+				v[i] = aux
+			}
+		}
+	}
+	escreva ("Ordem decrescente: ")
+	para (i=9; i>=0; i=i-1){
+		escreva(v[i], " ")
+	}
+	}
+}
